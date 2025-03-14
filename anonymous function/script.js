@@ -1,7 +1,7 @@
-let user = "Guilherme"
-
-let message = function(user) {
-    console.log(`Kevin is learning anonymous function with ${user}`)
+let message = () =>{
+    return "Hello!"
 }
 
-message(user)
+console.log(message())
+
+console.log(message)
