@@ -32,11 +32,16 @@ form {
 input[type="text"] {
     flex: 1;
     padding: 10px;
-    border: none;
     border-radius: 5px;
     background: #292929;
     color: white;
     outline: none;
+    border: 1px solid #292929;
+}
+
+input[type="text"]:focus {
+    border-color: #a970ff; /* Cor ao focar */
+    box-shadow: 0 0 5px #a970ff; /* Brilho suave ao redor */
 }
 
 button {
@@ -66,4 +71,20 @@ li {
     border-radius: 5px;
     font-weight: bold;
     text-align: left;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+li:hover {
+    background: #3a3a3a; /* Cor um pouco mais clara ao passar o mouse */
+    transform: scale(1.03); /* Efeito de leve aumento */
+    box-shadow: 0 0 8px rgba(169, 112, 255, 0.5); /* Sutil brilho roxo ao redor */
+}
+
+.input-error,
+.input-error:focus {
+    border-color: #e21a43;
+}
+
+.hide {
+    display: none;
 }
