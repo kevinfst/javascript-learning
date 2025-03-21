@@ -40,8 +40,10 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    border-color: #a970ff; /* Cor ao focar */
-    box-shadow: 0 0 5px #a970ff; /* Brilho suave ao redor */
+    border-color: #a970ff;
+    /* Cor ao focar */
+    box-shadow: 0 0 5px #a970ff;
+    /* Brilho suave ao redor */
 }
 
 button {
@@ -60,8 +62,31 @@ button:hover {
 
 ul {
     list-style: none;
-    padding: 0;
-    margin-top: 20px;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    border: none;
+}
+
+
+ul::-webkit-scrollbar {
+    width: 4px;
+}
+
+ul::-webkit-scrollbar-track {
+    background: #252525;
+    border-radius: 8px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background: #a970ff;
+    border-radius: 8px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+    background: #a970ff;
 }
 
 li {
@@ -75,9 +100,9 @@ li {
 }
 
 li:hover {
-    background: #3a3a3a; /* Cor um pouco mais clara ao passar o mouse */
-    transform: scale(1.03); /* Efeito de leve aumento */
-    box-shadow: 0 0 8px rgba(169, 112, 255, 0.5); /* Sutil brilho roxo ao redor */
+    background: #3a3a3a;
+    transform: scale(1.03);
+    box-shadow: 0 0 8px rgba(169, 112, 255, 0.5);
 }
 
 .input-error,
